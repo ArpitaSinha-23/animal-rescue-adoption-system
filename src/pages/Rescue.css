@@ -1,0 +1,43 @@
+.rescue-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #d4f7d4;
+}
+
+.rescue-card {
+  background: white;
+  padding: 30px;
+  width: 420px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,.15);
+}
+
+.rescue-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.rescue-card input,
+.rescue-card textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #bbb;
+}
+
+.rescue-card textarea {
+  height: 100px;
+  resize: none;
+}
+
+.rescue-card button {
+  width: 100%;
+  padding: 12px;
+  background: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}

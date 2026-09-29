@@ -1,0 +1,45 @@
+.adoption-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff6d5;
+  padding: 30px;
+}
+
+.adoption-card {
+  width: 450px;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,.15);
+}
+
+.adoption-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.adoption-card input,
+.adoption-card textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.adoption-card textarea {
+  height: 100px;
+  resize: none;
+}
+
+.adoption-card button {
+  width: 100%;
+  padding: 12px;
+  background: #ff9800;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}

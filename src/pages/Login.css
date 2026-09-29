@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', Segoe UI, sans-serif;
+}
+
+/* Bright Animated Gradient Background */
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f76b1c 100%);
+  padding: 1rem;
+}
+
+/* Glassmorphism/Elevated Card Effect */
+.login-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  transition: transform 0.3s ease;
+}
+
+.login-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Header Styling */
+.card-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.card-header h2 {
+  font-size: 1.8rem;
+  background: linear-gradient(45deg, #764ba2, #667eea);
+
+  background-clip: text;              /* Add this */
+  -webkit-background-clip: text;
+  color: transparent;                 /* Add this */
+  -webkit-text-fill-color: transparent;
+
+  font-weight: 700;
+}
+
+.card-header p {
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+/* Form Inputs */
+.input-group {
+  margin-bottom: 1.4rem;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.4rem;
+  color: #444;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: 2px solid #e1e1e1;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  background: #f9f9ff;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #764ba2;
+  box-shadow: 0 0 10px rgba(118, 75, 162, 0.2);
+  background: #ffffff;
+}
+
+/* Vibrant Action Button */
+.login-btn {
+  width: 100%;
+  padding: 0.9rem;
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(255, 75, 43, 0.4);
+  transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+  background: linear-gradient(45deg, #ff4b2b, #ff416c);
+  box-shadow: 0 8px 20px rgba(255, 75, 43, 0.6);
+  transform: scale(1.02);
+}
+
+/* Success Card */
+.success-box {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: #e8f5e9;
+  border-left: 5px solid #2e7d32;
+  border-radius: 8px;
+  color: #1b5e20;
+  text-align: center;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.login-card {
+  position: relative;
+  z-index: 100;
+}
+
+.login-card input {
+  position: relative;
+  z-index: 101;
+  pointer-events: auto;
+}
